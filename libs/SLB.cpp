@@ -693,7 +693,7 @@ namespace SLB {
     SLB_DEBUG_CALL;
     const ClassInfo *CI = obj->getClassInfo();
     std::ostringstream out;
-    out << "Invalid Method '" << CI->getName() << "::" <<
+    out << "Invalid Method '" << CI->getName().c_str() << "::" <<
       c << "' NOT FOUND!" << std::endl;
     _what = out.str();
   }
